@@ -1,6 +1,6 @@
 fun main() {
     fun part1(input: List<String>): Int {
-        var fishes = input[0].split(",").map { it.toInt() }.toMutableList()
+        var fishes = input[0].splitByComaToInts()
 
         for (day in 1..80) {
             val newFishes = fishes.toMutableList()
@@ -19,7 +19,7 @@ fun main() {
     }
 
     fun part2(input: List<String>): Long {
-        val fishes = input[0].split(",").map { it.toInt() }.toMutableList()
+        val fishes = input[0].splitByComaToInts()
         val experimentLength = 256
 
         val timers = mutableListOf<Long>(0, 0, 0, 0, 0, 0, 0, 0, 0, 0)

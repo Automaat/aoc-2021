@@ -1,6 +1,6 @@
 fun main() {
     fun part1(input: List<String>): Int {
-        val pickedNumbers = input[0].split(",").map { it.toInt() }
+        val pickedNumbers = input[0].splitByComaToInts()
         val boards = readBoards(input)
 
         var sumOfUnmarked = 0
@@ -23,7 +23,7 @@ fun main() {
     }
 
     fun part2(input: List<String>): Int {
-        val pickedNumbers = input[0].split(",").map { it.toInt() }
+        val pickedNumbers = input[0].splitByComaToInts()
         val boards = readBoards(input)
 
         var sumOfUnmarked = 0

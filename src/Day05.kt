@@ -93,4 +93,4 @@ fun takeLower(a: Int, b: Int): Pair<Int, Int> {
     return if (a < b) Pair(a, b) else Pair(b, a)
 }
 
-fun parseLine(i: String) = i.split(" -> ").map { it.split(",") }
+fun parseLine(i: String) = i.split(" -> ").map { it.splitByComa() }
