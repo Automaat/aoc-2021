@@ -63,3 +63,5 @@ fun <V> List<V>.permutations(): List<List<V>> {
     generate(this.count(), this.toList())
     return retVal
 }
+
+fun String.splitAndTrim() = this.split("").drop(1).dropLast(1)
