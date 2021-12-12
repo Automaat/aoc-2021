@@ -55,7 +55,7 @@ fun Graph.addEdge(start: String, end: String) {
     }
 }
 
-fun solution(graph: Graph, current: String, visitedSmall: Set<String>, repeat: Pair<String, Int>, path:String): Set<String> {
+fun solution(graph: Graph, current: String, visitedSmall: Set<String>, repeat: Pair<String, Int>, path: String): Set<String> {
     if (current == "end") {
         return setOf(path)
     }
